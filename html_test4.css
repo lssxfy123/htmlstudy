@@ -1,0 +1,12 @@
+h1 {
+	margin:10px 0 6px 5px;
+	font-size:14px;
+	}
+p {
+	margin:10px;
+	font-weight:bold;
+}
+
+p span {
+	color:green;
+	}
