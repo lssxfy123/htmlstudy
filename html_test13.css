@@ -1,0 +1,12 @@
+div#container {width:500px}
+
+div#header {background-color:#99bbbb;}
+
+div#menu {background-color:red;
+height:200px; width:150px; float:left;}
+	 
+div#content {background-color:#EEEEEE;
+height;200px; width:350px; float:left;}
+
+div#footer {background-color:green;clear:both;
+text-align:center}
