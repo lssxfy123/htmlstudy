@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--复选框表单-->
+<body>
+<h4>带有复选框的提交表单：</h4>
+<form name="input" action="http://www.w3school.com.cn/html/html_form_action.asp" method="get">
+I have a bike:
+<input type="checkbox" name="vehicle" value="Bike" checked="checked" />
+<br />
+I have a car:
+<input type="checkbox" name="vehicle" value="Car" />
+<br />
+I have an airplane:
+<input type="checkbox" name="vehicle" value="Airplane" />
+<br />
+<br />
+<input type="submit" value="Submit" />
+</form>
+
+<h4>带有单选按钮的提交表单：</h4>
+<form name="input" action="http://www.w3school.com.cn/html/html_form_action.asp" method="get">
+Male:
+<input type="radio" name="Sex" value="Male" checked="checked" />
+<br />
+Female:
+<input type="radio" name="Sex" value="Female" />
+<br />
+<input type="submit" value="Submit" />
+</form>
+
+<h4>文本标记：&lt;label&gt;</h4>
+<form>
+<label for="male">Male</label>
+<input type="radio" name="sex" id="male" />
+<br />
+<label for="female">Female</label>
+<input type="radio" name="sex" id="female" />
+</form>
+
+<br />
+
+<form action="http://www.w3school.com.cn/example/html5/demo_form.asp" method="get" id="iceform">
+你喜欢什么口味的冰激凌？
+<input type="text" name="icecream" />
+<br />
+<input type="submit" />
+</form>
+
+<p>下面的fieldset位于form元素之外，但仍然是表单的一部分</p>
+<fieldset form="iceform">
+	<legend>Personalia:</legend>
+	Name: <input type="text" name="usrname" />
+	<br />
+	Eamil: <input type="email" name="email" />
+	<br />
+</fieldset>
+
+<h4>选择列表&lt;select&gt;下的选项组&lt;optgroup&gt;</h4>
+<select>
+	<optgroup label="Swedish Cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+	</optgroup>
+	<optgroup label="German Cars">
+		<option value="mercedes">Mercedes</option>
+		<option value="audi">Audi</option>
+	</optgroup>
+</select>
+</body>
+</html>

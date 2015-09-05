@@ -10,8 +10,9 @@
 <br />
 姓：
 <input type="text" name="lastname" />
+</form>
 
-<h4>复选框：改变&lt;input&gt;的属性来实现</h4>
+<h4>复选框：改变&lt;input&gt;的type属性来实现,type="checkbox"</h4>
 <form>
 我喜欢自行车：
 <input type="checkbox" name="Bike" />
@@ -19,5 +20,53 @@
 我喜欢汽车：
 <input type="checkbox" name="Car" />
 </form>
+
+<h4>单选按钮：&lt;input&gt;的属性type="radio"</h4>
+<form>
+男性：
+<input type="radio" checked="checked" name="Sex" value="male" />
+<br />
+女性：
+<input type="radio" name="Sex" value="female" />
+</form>
+
+<h4>下拉列表：&lt;select&gt;</h4>
+<p>列表中的选项：&lt;option&gt;</p>
+<form>
+<select name="cars">
+	<option value="volvo">Volvo</option>
+	<option value="saab">Saab</option>
+	<option value="fiat" selected="selected">Fiat</option>
+	<option value="audi">Audi</option>
+</select>
+</form>
+
+<h4>文本域：&lt;textarea&gt;</h4>
+<textarea rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+<h4>按钮：&lt;input&gt;的属性type="button"</h4>
+<form>
+<input type="button" value="Hello world!" />
+</form>
+
+<h4>表单域：&lt;fieldset&gt;</h4>
+<p>定义标题：&lt;legend&gt;</p>
+<form>
+	<fieldset>
+		<legend>健康信息</legend>
+		身高：<input type="text" />
+		<br />
+		体重：<input type="text" />
+	</fieldset>
+</form>
+
+<h4>表单提交：&lt;form&gt;的属性action</h4>
+<!--method属性定义发送表单数据的HTTP方法-->
+<form action="http://www.w3school.com.cn/example/html/form_action.asp" method="get">
+	<p>First name: <input type="text" name="fname" /></p>
+	<p>Last name: <input type="text" name="lname" /></p>
+	<input type="submit" />
 </form>
 </html>
