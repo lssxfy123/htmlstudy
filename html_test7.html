@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>第7个HTML页面</title>
+	</head>
+	
 	<!--图像-->
 	<!--背景图像-->
-	<body background="薰衣草.jpg">
+	<!--使用CSS来设置背景图像-->
+	<body style="background: url(薰衣草.jpg)">
 	<p style="color: red">图片：&lt;img&gt;</p>
 	<h1>郁金香</h1>
 	<p>郁金香：
-	<img src="郁金香.jpg" width="128" height="128" />
+	<img src="薰衣草.jpg" width="128" height="128" alt="上海鲜花港-薰衣草" />
   </p>
   
   <!--不同链接的图像-->
+  <h4>&lt;img&gt;中的alt属性是必须的</h4>
   <p>
   来着另一个链接的图片
-  <img src="http://www.w3school.com.cn/i/w3school_logo_white.gif" />
+  <img alt="链接无用" src="http://www.w3school.com.cn/i/w3school_logo_white.gif" />
   </p>
   
   <!--图像无法显示时的替代品-->
@@ -25,7 +31,7 @@
   <p>
   图像做为链接使用：
   <a href="http://www.w3school.com.cn/example/html/lastpage.html">
-  <img src="http://www.w3school.com.cn/i/eg_buttonnext.gif" />
+  <img src="http://www.w3school.com.cn/i/eg_buttonnext.gif" alt="链接不可用" />
   </a>
   </p>
   
@@ -41,13 +47,13 @@
    />
    
    <!--img标签的usemap属性引用name属性或id属性-->
-   <map name="planetmap", id="planetmap">
+   <map name="planetmap" id="planetmap">
    
    <!--可点击区域为圆形-->
    <!--180,139为x,y坐标,14为半径-->
    <area
    shape="circle"
-   coords="180, 139, 14"
+   coords="180,139,14"
    href="http://www.w3school.com.cn/example/html/venus.html"
    target="_blank"
    alt="Venus"
@@ -55,7 +61,7 @@
     
     <area
     shape="circle"
-    coords="129, 161, 10"
+    coords="129,161,10"
     href="http://www.w3school.com.cn/example/html/mercur.html"
     target="_blank"
     alt="Mercury"
@@ -63,7 +69,7 @@
      
     <area
     shape="rect"
-    coords="0, 0, 110, 260"
+    coords="0,0,110,260"
     href="http://www.w3school.com.cn/example/html/sun.html"
     target="_blank"
     alt="Sun"
@@ -76,7 +82,7 @@
    </p>
    
    <a href="http://www.w3school.com.cn/example/html/form_action.asp">
-   <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
+   <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" alt="链接不可用" />
    </a>
 	</body>
 </html>

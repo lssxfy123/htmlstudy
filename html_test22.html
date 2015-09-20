@@ -3,13 +3,16 @@
 <!--文档的标题-->
 <head>
 <title>第22个HTML文件</title>
-<meta http-equiv="Content-Type" content="text/html"; charset="gb2312" />
-<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 
-<base target="_blank" />
+<!--base标签只能有一个-->
+<base href="http://www.w3school.com.cn/i/" target="_blank"/>
 </head>
 
 <body>
+<h4>&lt;head&gt;标签用于定义文档的头部，是所有头部元素的容器</h4>
+<p>&lt;base&gt;,&lt;link&gt;,&lt;meta&gt;,&lt;script&gt;,&lt;style&gt;,&lt;style&gt;可以定义在&lt;head&gt;内</p>
+<h4>使用在&lt;body&gt;中的标签最好不要出现在&lt;head&gt;内</h4>
 <p>文档的段落</p>
 <p>在文档头部使用&lt;base&gt;标签是所有链接都在新窗口打开</p>
 
@@ -17,5 +20,11 @@
 <a href="http://www.w3school.com.cn">这个链接</a>
 将在新窗口加载，即使没有设置target属性
 </p>
+
+<br /><br />
+<img src="eg_smile.gif" alt="图片不可见" /><br />
+<p>请注意，我们已经为图像规定了一个相对地址。由于我们已经在&lt;head&gt;中
+规定了一个基准URL，浏览器将在如下地址寻找图片：</p>
+<p>"http://www.w3school.com.cn/i/eg_smile.gif"</p>
 </body>
 </html>

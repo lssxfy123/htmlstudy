@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<!--样式表-->
-		
-	<head>
+	<!--样式表-->		
+<head>
 		<!--内部样式表-->
-		<p style="color: black">样式表：&lt;style&gt;</p>
+		<title>HTML样式表</title>
 		<style type="text/css">
-			h1 {color: red}
-			p {color: blue}
 		</style>
-		
+
 		<!--外部样式表-->
 		<!--link标签只能存在<head>部分-->
-		<p style="color: black">外部样式表：&lt;link&gt;</p>
-		<link rel="stylesheet" type="text/css" href="html_test4.css" />
-	</head>
+		<link rel="stylesheet" type="text/css" href="html_test4.css" title="Test Styles" />
+</head>
 	
-	<body>
+<body>
 		<h1>标题1</h1>
 		<p>段落1</p>
+		
+		<p style="color: blue">样式表：&lt;style&gt;</p>
+
+		
+
+		<p style="color: black">外部样式表：&lt;link&gt;</p>
 		
 		<!--内联样式表-->
 		<a href="https://www.baidu.com/" target="view_window" style="text-decoration:none">百度查询</a>
@@ -34,5 +36,5 @@
 		<!--应用样式表才会有效果-->
 		<p style="color:black">文档行内的区域：&lt;span&gt;</p>
 		<p><span>some text.</span> some other text</p>
-	</body>
+</body>
 </html>

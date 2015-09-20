@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>第8个HTML页面</title>
+	</head>
 	<!--表格-->
 	<body>
-	<h4>带有 cellpadding:单元格边距</h4>
-	<table border="1" cellpadding="10">
+	<table style="border: 1px solid">
 	<tr>
-		<td>First</td>
-		<td>Row</td>
+		<td style="border:1px solid">First</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	
 	<tr>
-		<td>Second</td>
-		<td>Row</td>
+		<td style="border:1px solid">Second</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	</table>
 	
-	<h4>带有cellspacing：单元格间距</h4>
-	<table border="1" cellspacing="10">
+	<br />
+	<table style="border: 1px solid; color: red">
 	<tr>
-		<td>First</td>
-		<td>Row</td>
+		<td style="border:1px solid; color: red">First</td>
+		<td style="border:1px solid; color: red">Row</td>
 	</tr>
 	
 	<tr>
-		<td>Second</td>
-		<td>Row</td>
+		<td style="border:1px solid; color: red">Second</td>
+		<td style="border:1px solid; color: red">Row</td>
 	</tr>
 	</table>
 	
 	<h4>背景颜色：</h4>
-	<table border="1" bgcolor="red">
+	<table style="border: 1px solid;background-color:red">
 	<tr>
-		<td>First</td>
-	  <td>Row</td>
+		<td style="border:1px solid">First</td>
+	  <td style="border:1px solid">Row</td>
 	</tr>
 	
 	<tr>
-		<td>Second</td>
-		<td>Row</td>
+		<td style="border:1px solid">Second</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	</table>
 	
 	<h4>背景图像：</h4>
-	<table border="1"
-	background="http://www.w3school.com.cn/i/eg_bg_07.gif">
+	<table style="border:1px solid;background-image:url(http://www.w3school.com.cn/i/eg_bg_07.gif)">
 	<tr>
-		<td>First</td>
-		<td>Row</td>
+		<td style="border:1px solid">First</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	
 	<tr>
-		<td>Second</td>
-		<td>Row</td>
+		<td style="border:1px solid">Second</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	</table>
 	
 	<h4>单元背景：</h4>
-	<table border="1">
+	<table style="border:1px solid">
 	<tr>
-		<td bgcolor="red">First</td>
-		<td>Row</td>
+		<td style="background-color:red; border:1px solid">First</td>
+		<td style="border:1px solid">Row</td>
 	</tr>
 	
 	<tr>
 		<td 
-		background="http://www.w3school.com.cn/i/eg_bg_07.gif">
+		style="background-image:url(http://www.w3school.com.cn/i/eg_bg_07.gif); border:1px solid">
 	  Second
 	  </td>
-	  <td>Row</td>
+	  <td style="border:1px solid">Row</td>
 	</tr>
 	</table>
 	
 	<h4>单元格排列内容</h4>
-	<table border="1">
+	<table style="border:1px solid">
 	<tr>
-		<th align="leff">消费项目...</th>
-		<th align="right">一月</th>
+		<th style="border:1px solid; text-align:left">消费项目...</th>
+		<th style="border:1px solid; text-align:right">一月</th>
 	</tr>
 	
 	<tr>
-		<td align="left">衣服</td>
-		<td align="right">$241.0</td>
-		<td align="right">$50.2</td>
+		<td style="border:1px solid; text-align:left">衣服</td>
+		<td style="border:1px solid; text-align:right">$241.0</td>
+		<td style="border:1px solid; text-align:right">$50.2</td>
 	</tr>
 	</table>
 	
 	<h4>frame属性控制边框显示(不支持IE)</h4>
 	<p>Table with frame="box"</p>
-	<table frame="box">
+	<h4>frame属性已废弃</h4>
+	<table style="border:1px solid">
 	<tr>
 		<th>Moth</th>
 		<th>Savings</th>
@@ -100,7 +102,7 @@
 	</table>
 	
 	<p>Table with frame="above"</p>
-	<table frame="above">
+	<table style="border-top:1px solid">
 	<tr>
 		<th>Month</th>
 		<th>Savings</th>
@@ -113,7 +115,7 @@
 	</table>
 	
 	<p>Table with frame="below"</p>
-	<table frame="below">
+	<table style="border-bottom:1px solid">
 	<tr>
 		<th>Month</th>
 		<th>Savings</th>
@@ -126,7 +128,7 @@
 	</table>
 	
 	<p>Table with frame="hsides"</p>
-	<table frame="hsides">
+	<table style="border-top:1px solid; border-bottom:1px solid">
 	<tr>
 		<th>Month</th>
 		<th>Savings</th>
@@ -139,7 +141,7 @@
 	</table>
 	
 	<p>Table with frame="vsides"</p>
-	<table frame="vsides">
+	<table style="border-left:1px solid; border-right:1px solid">
 	<tr>
 		<th>Month</th>
 		<th>Savings</th>

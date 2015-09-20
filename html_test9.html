@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<!--表格-->
-	
+	<head>
+	  <title>第9个HTML页面</title>
+		<link rel="stylesheet" type="text/css" href="html_test9.css" />
+	</head>
 	<body>
 	<p>每个表格由&lt;table&gt;标签开始</p>
 	<p>每个表格行由&lt;tr&gt;标签开始</p>
 	<p>每个表格数据由&lt;td&gt;标签开始</p>
 	
 	<h4>一行：</h4>
-	<!--border属性设置边框-->
-	<table border="1">
+	<table id="table_1">
 	<tr>
 		<td>100</td>
 	</tr>
 	</table>
 	
 	<h4>一行三列：</h4>
-	<table border="1">
+	<table id="table_2">
 	<tr>
 		<td>100</td>
 		<td>200</td>
@@ -25,7 +27,7 @@
 	</table>
 	
 	<h4>两行三列：</h4>
-	<table border="1">
+	<table>
 	<tr>
 		<td>100</td>
 		<td>200</td>
@@ -41,7 +43,7 @@
 	
 	<!--表头-->
 	<h4>表头：&lt;th&gt;</h4>
-	<table border="1">
+	<table>
 	<tr>
 		<th>姓名</th>
 		<th>电话</th>
@@ -54,7 +56,7 @@
 	</table>
 	
 	<h4>垂直的表头：</h4>
-	<table border="1">
+	<table>
 	<tr>
 		<th>姓名</th>
 		<td>Bill Gates</td>
@@ -68,7 +70,7 @@
 	
 	<h4>表格标题：</h4>
 	<p style="color: red">标题：&lt;caption&gt;</p>
-	<table border="5">
+	<table>
 	<caption>我的标题</caption>
 	<tr>
 		<td>100</td>
@@ -84,7 +86,7 @@
 	</table>
 	
 	<h4>横跨两列的单元格：</h4>
-	<table border="1">
+	<table>
 	<tr>
 		<th>姓名</th>
 		<th colspan="2">电话</th>
@@ -98,7 +100,7 @@
 	</table>
 	
 	<h4>横跨两行的单元格：</h4>
-	<table border="1">
+	<table>
 	<tr>
 		<th>姓名</th>
 		<td>Bill Gates</td>
@@ -115,7 +117,7 @@
 	</table>
 	
 	<p style="color: red">表格内的标签</p>
-	<table border="1">
+	<table>
 	<tr>
 		<td>
 			<p>这是一个段落</p>
@@ -123,7 +125,7 @@
 		</td>
 		
 		<td>这个单元包含一个表格：
-			<table border="1">
+			<table>
 			<tr>
 				<td>A</td>
 				<td>B</td>
