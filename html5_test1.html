@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第一个HTML5页面</title>
+	<link rel="stylesheet" type="text/css" href="html5_test1.css" />
+	<script type="text/javascript" src="jQuery/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("button#playPause").click(function() {
+			// play不是jQuery函数，而是DOM函数
+			if ($("video#videoTest").get(0).paused)
+			{
+				$("video#videoTest").get(0).play();
+			}
+			else
+			{
+				$("video#videoTest").get(0).pause();
+			}	
+		});
+		
+		$("button#makeBig").click(function() {
+			$("video#videoTest").css("width", 560);
+		});
+		
+		$("button#makeNormal").click(function() {
+			$("video#videoTest").css("width", 420);
+		});
+		
+		$("button#makeSmall").click(function() {
+			$("video#videoTest").css("width", 320);
+		});
+	});
+
+</script>
+</head>
+
+<body>
+
+<div id="test">
+	<button id="playPause">播放/暂停</button>
+	<button id="makeBig">大</button>
+	<button id="makeNormal">中</button>
+	<button id="makeSmall">小</button>
+	<br />
+	
+	<video id="videoTest">
+		<source src="星月神话.mp4" type="video/mp4" />
+	</video>
+</div>
+
+</body>
+</html>

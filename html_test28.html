@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第28个HTML页面</title>
+	<link rel="stylesheet" type="text/css" href="html_test28.css" />
+</head>
+
+<body>
+
+<h4>播放视频</h4>
+
+<p>在HTML上播放视频最好的方式是&lt;video&gt;+&lt;object&gt;+&lt;embed&gt;</p>
+
+<p>&lt;video&gt;尝试用mp4,ogg,webm来播放视频，如果均失败，回退到embed元素</p>
+<video controls="controls">
+	<source src="星月神话.mp4" type="video/mp4" />
+	<source src="星月神话.ogg" type="video/ogg" />
+	<source src="星月神话.webm" type="video/webm" />
+	<object data="星月神话.mp4">
+		<embed src="星月神话.mp4" />
+	</object>
+</video>
+</body>
+</html>
