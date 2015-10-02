@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第7个HTML5页面</title>
+	<link rel="stylesheet" type="text/css" href="html5_test7.css" />
+</head>
+
+<body>
+	
+<canvas id="myCanvas">
+</canvas>
+
+<script type="text/javascript">
+	
+var c = document.getElementById("myCanvas");
+var cxt = c.getContext("2d");
+var img = new Image();
+img.src= "http://www.w3school.com.cn/i/eg_flower.png";
+// 等图片加载后，在进行canvas绘制
+img.onload = function() {
+	cxt.drawImage(img,0,0);
+}
+</script>
+
+</body>
+</html>

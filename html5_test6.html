@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>第6个HTML5页面</title>
+	<link rel="stylesheet" type="text/css" href="html5_test6.css" />
+</head>
+
+<!--canvas画布绘制图像-->
+<body>
+
+<canvas id="myCanvas">
+</canvas>
+
+<script type="text/javascript">
+
+var c = document.getElementById("myCanvas");
+var cxt = c.getContext("2d");
+cxt.fillStyle = "green";
+cxt.beginPath();
+cxt.arc(70, 18, 15, 0, Math.PI*2, true);
+cxt.closePath();
+cxt.fill();
+
+</script>
+
+</body>
+</html>
