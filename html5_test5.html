@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>µÚ5¸öHTMLÒ³Ãæ</title>
+	<link rel="stylesheet" type="text/css" href="html5_test5.css" />
+	
+	<script type="text/javascript">
+		var isClicked = false;
+		
+		function clickCanvas() {
+		  if (!isClicked) {
+		  	var c = document.getElementById("myCanvas");
+		    var cxt = c.getContext("2d");
+		    cxt.moveTo(10, 10);
+		    cxt.lineTo(150, 50);
+		    cxt.lineTo(10, 50);
+		    cxt.stroke();
+		    isClicked = true;
+		  }
+		}
+		
+	</script>
+</head>
+
+<body>
+<canvas id="myCanvas" onclick="clickCanvas()">
+</canvas>
+</body>
+</html>

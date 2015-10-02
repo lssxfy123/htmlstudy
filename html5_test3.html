@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--HTML5 拖动-->
+	<title>第3个HTML5页面</title>
+	<link rel="stylesheet" type="text/css" href="html5_test3.css" />
+	
+	<script type="text/javascript">
+	function allowDrop(event)
+	{
+		event.preventDefault();
+	}
+	
+	function drag(event)
+	{
+		event.dataTransfer.setData("Text", event.target.id);
+	}
+	
+	function drop(event)
+	{
+		event.preventDefault();
+		var data=event.dataTransfer.getData("Text");
+		event.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+
+<body>
+<div id="div1" ondrop="drop(event)" 
+ondragover="allowDrop(event)">
+  <img src="http://www.w3school.com.cn/i/w3school_logo_black.gif" draggable="true"
+  ondragstart="drag(event)" id="drag1" alt="图片无法显示" />
+</div>
+
+<div id="div2" ondrop="drop(event)"
+ondragover="allowDrop(event)">
+</div>
+</body>
+</html>

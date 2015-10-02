@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第4个HTML页面</title>
+	<link rel="stylesheet" type="text/css" href="html5_test4.css" />
+	
+	<script type="text/javascript">
+	function cnvs_getCoordinates(event) {
+		// x,y用于对绘画进行定位
+		x=event.clientX;
+		y=event.clientY;
+		document.getElementById("xycoordinates").innerHTML="Coordinates: ("
+		 + x + "," + y + ")";
+	}
+	
+	function cnvs_clearCoordinates()
+	{
+		document.getElementById("xycoordinates").innerHTML="";
+	}
+	</script>
+</head>
+
+<body>
+<p>把鼠标悬停在下面的矩形上可以看到坐标：</p>
+
+<div id="coordiv" onmousemove="cnvs_getCoordinates(event)"
+onmouseout="cnvs_clearCoordinates()">
+</div>
+
+<br />
+<br />
+<br />
+<div id="xycoordinates"></div>
+</body>
+</html>

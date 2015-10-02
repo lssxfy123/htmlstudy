@@ -1,0 +1,12 @@
+body {
+	margin:0px;
+	font-size:70%;
+	font-family:verdana,helvetica,arial,sans-serif;
+}
+
+#coordiv {
+	float:left;
+	width:199px;
+	height:99px;
+	border:1px solid #c3c3c3
+}
