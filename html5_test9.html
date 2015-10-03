@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第9个HTML页面</title>
+</head>
+
+<body>
+<!--客户端存储数据-->
+
+<p>localStorage存储的数据没有时间限制</p>
+
+
+<script type="text/javascript">
+
+// pagecount为自定义的变量名
+// 每次刷新网页，pagecount会加1
+// 重新打开页面,pagecount会继续计数
+if (localStorage.pagecount) {
+	localStorage.pagecount = Number(localStorage.pagecount) + 1;
+} else {
+	localStorage.pagecount = 1;
+}
+
+document.write("Visits: " + localStorage.pagecount
+ + "time(s).");
+
+</script>
+
+<p>sessionStorage存储的数据有时间限制，用户关闭浏览器会删除数据</p>
+<script type="text/javascript">
+
+if (sessionStorage.pagecount) {
+	sessionStorage.pagecount = Number(sessionStorage.pagecount) + 1;
+} else {
+	sessionStorage.pagecount = 1;
+}
+
+document.write("Visits: " + sessionStorage.pagecount
+ + "time(s) this session.");
+
+</script>
+
+</body>
+</html>
