@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第17个HTML5页面</title>
+</head>
+
+<body>
+
+<h4>form属性重写</h4>
+<p>适用于&lt;input&gt;类型中的submit和image</p>
+
+<p>通过属性重写，一个表单创建不同的submit按钮，实现表单的不同提交</p>
+<form action="http://www.w3school.com.cn/example/html5/demo_form.asp" method="get" id="user_form">
+E-mail:<input type="email" name="userid" /><br />
+<input type="submit" value="Submit" />
+<br />
+<!--提交到不同的服务器-->
+<input type="submit" formaction="http://www.w3school.com.cn/example/html5/demo_admin.asp" value="Submit as admin" />
+<br />
+<!--提交表单不需要验证-->
+<input type="submit" value="Submit without validation" formnovalidate />
+</form>
+
+</body>
+</html>
