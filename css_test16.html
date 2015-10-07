@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>第16个CSS页面</title>
+	<style type="text/css">
+	p.normal {
+		white-space: normal;
+	}
+	
+	p.pre {
+		white-space: pre;
+	}
+	
+	p.nowrap {
+		white-space: nowrap;
+	}
+	
+	p.pre-wrap {
+		white-space: pre-wrap;
+	}
+	
+	p.pre-line {
+		white-space: pre-line;
+	}
+	</style>
+</head>
+
+<body>
+<!--CSS 处理空白符-->
+
+<h4>white-space为normal，合并所有的空白符，忽略换行符，允许自动换行</h4>
+<p class="normal">This   paragraph has many 
+	spaces     in it.</p>
+	
+<h4>white-space为pre，不会合并空白符，保留换行符，不允许自动换行</h4>
+<p class="pre">This   paragraph has many 
+	spaces     in it.a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a  a a a a a a a a a a a a a a a a a
+</p>
+
+<h4>white-space为nowrap，合并所有的空白符，忽略换行符，不允许自动换行</h4>
+<p class="nowrap">
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+这是一些文本。
+</p>
+	
+<h4>white-space为pre-wrap，不合并空白符，保留换行符，允许自动换行</h4>
+<p class="pre-wrap">This   paragraph has many 
+	spaces     in it,but their       preservation    line wrapping or line breaking.a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+</p>
+
+<h4>white-space为pre-line，合并空白符，保留换行符，允许自动换行</h4>
+<p class="pre-line">This   paragraph has many 
+	spaces     in it,but their       preservation    line wrapping or line breaking.a a a a  a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
+</p>
+</body>
+
+</html>
