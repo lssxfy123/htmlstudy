@@ -7,14 +7,14 @@
         body {font-size: 100%;}
         #p1 {
           color: red;
-          font-size: 40px;
+          font-size: 3em;
         }
 	</style>
         
-        <script type=“text/javascript”>
+        <script type="text/javascript">
         function setFontSize()
         {
-          document.getElementById("p1").style.fontSize=60;
+          document.getElementById("p1").style.fontSize = "60px";
         }
         </script>
 </head>	
@@ -30,9 +30,9 @@
 <p>为了保证在所有浏览器中字体大小都一样，可以设置父元素&lt;body&gt;的font-size为百分比，然后设置每个元素的font-size为em值</p>
 
 <p>This is a normal paragraph</p>
-<p id=“p1”>This is a larger paragraph</p>
+<p id="p1">This is a larger paragraph</p>
 
-<button onlick=“setFontSize()”>Change font-size</button>
+<button onclick="setFontSize()">Change font-size</button>
 
 </body>
 
