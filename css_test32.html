@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>第32个CSS页面</title>
+	<style type="text/css">
+	table,td,th {
+		border: 1px solid blue;
+	}
+	
+	caption {
+		caption-side: bottom;
+	}
+	
+	table.one {
+		empty-cells: hide;
+	}
+	</style>
+</head>
+
+<body>
+<!--CSS 表格标题-->
+
+<h4>表格标题</h4>
+<table>
+<caption>这是表格标题</caption>
+<tr>
+	<th>First name</th>
+	<th>Last name</th>
+</tr>
+
+<tr>
+	<td>Bill</td>
+	<td>Gates</td>
+</tr>
+
+<tr>
+	<td>Steven</td>
+	<td>Jobs</td>
+</tr>
+</table>
+
+<br />
+<br />
+
+<h4>隐藏表格中的空单元格</h4>
+
+<table class="one">
+<caption>这是表格标题</caption>
+<tr>
+	<th>First name</th>
+	<th>Last name</th>
+</tr>
+
+<tr>
+	<td>Bill</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>Steven</td>
+	<td>Jobs</td>
+</tr>
+</table>
+</body>
+
+</html>
