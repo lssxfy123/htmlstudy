@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第51个CSS页面</title>
+    <style type="text/css">
+      .important { color: red;
+          font-style: italic;}
+      .warning {color: blue;}
+      .urgent {
+          color: purple;}
+      .important.warning {color: gold;}
+      .important.urgent {color: black;}
+      .urgent.warning {color:gray;}
+      .important.urgent.warning {color: green;}
+        li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--CSS 多类选择器-->
+
+<p class="important">This paragraph is important</p>
+<p class="warning">This is a warning</p>
+<p class="important urgent warning">This paragraph is very important</p>
+
+<h4>多类选择器的匹配</h4>
+<p>
+    定义一个&lt;p class="important urgent warning"&gt;，其在样式表&lt;style&gt;会按照如下的方式匹配
+</p>
+
+<ol>
+    <li>.important.urgent.warning</li>
+    <li>.urgent.warning</li>
+    <li>.important.urgent</li>
+    <li>.important.warning</li>
+    <li>.urgent</li>
+    <li>.warning</li>
+    <li>.important</li>
+</ol>
+
+<br />
+<p><b>注意：</b>上述的匹配顺序针对的是同一种属性的匹配，例如color属性，
+    如果排在第7位的.important还包含另外一种属性font-style，则在匹配了第1位的
+    .important.urgent.warning的color后，还会匹配.important中的font-style属性
+</p>
+</body>
+</html>
